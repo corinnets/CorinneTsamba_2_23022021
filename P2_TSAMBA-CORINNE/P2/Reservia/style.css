@@ -1,0 +1,152 @@
+/* Définition des polices personnalisées */
+
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('./assets/fonts/raleway-italic-variablefont_wght-webfont.woff');
+    src: url('./assets/fonts/raleway-italic-variablefont_wght-webfont.woff2'); 
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('./assets/fonts/raleway-variablefont_wght-webfont.woff');
+    src: url('./assets/fonts/raleway-variablefont_wght-webfont.woff2'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eléments principaux de la page */
+
+body
+{
+
+    font-family: 'Raleway', sans-serif;
+    color: #181818;
+}
+
+#bloc_page
+{
+    width: 80%;
+    margin: auto;
+}
+
+section h1
+{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-transform: none;
+}
+
+/* Header */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.entete2 h1
+{
+    font-size: 1em;
+}
+
+.entete2 p
+{
+    font-size: 0.5em;
+    margin: 0%;
+    padding-top: 0px;
+}
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    align-items: baseline;
+}
+
+nav li
+{
+    margin-right: 20px;
+}
+
+nav a
+{
+    font-size: 0.8em;
+    padding-bottom: 10px;
+    color: #181818;
+    text-decoration: none ;
+
+}
+#enroll
+{
+    color: #0065FC;
+    font-weight: bold;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#enroll:hover
+{
+    background-color: #0065FC ;
+    color: #ffffff;
+    border-radius: 5% ;
+}
+
+nav a:hover
+{
+    color: #0065FC;
+    border-top: 1px solid #0065FC;
+    padding-top: 15px;
+
+}
+/* Footer */
+
+footer
+{
+    display: flex;
+    background-color: #F2F2F2;  
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: flex-start
+  
+    
+}
+
+footer ul
+{
+    list-style-type: none;
+    font-size: 0.5em;
+    text-decoration: none;
+    justify-content: center;
+    
+}
+
+.about
+{
+   display: flex;
+   flex-direction: column;
+   margin-left: 20px;
+}
+
+
+
+footer h1
+{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+      
+}
+footer a
+{
+    text-decoration: none;
+}
+
