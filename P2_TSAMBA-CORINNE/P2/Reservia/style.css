@@ -29,7 +29,7 @@ body
 
 #bloc_page
 {
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
@@ -109,44 +109,36 @@ nav a:hover
 }
 /* Footer */
 
-footer
-{
+footer{
     display: flex;
     background-color: #F2F2F2;  
     padding-top: 10px;
     padding-bottom: 10px;
-    justify-content: flex-start
-  
-    
+    justify-content: space-between
 }
 
-footer ul
-{
-    list-style-type: none;
-    font-size: 0.5em;
-    text-decoration: none;
-    justify-content: center;
-    
-}
-
-.about
-{
-   display: flex;
-   flex-direction: column;
-   margin-left: 20px;
-}
-
-
-
-footer h1
-{
+footer h1{
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 0.8em;
-      
 }
-footer a
-{
-    text-decoration: none;
+  
+footer ul{
+    list-style-type: none;
+    font-size: 0.5em;
 }
+
+footer .about{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+}
+
+        
+
+
+
+
+
+
 
