@@ -1,45 +1,53 @@
 /* Définition des polices personnalisées */
 
+
 @font-face
 {
     font-family: 'Raleway';
-    src: url('./assets/fonts/raleway-italic-variablefont_wght-webfont.woff');
-    src: url('./assets/fonts/raleway-italic-variablefont_wght-webfont.woff2'); 
+    src: url('./assets/fonts/Raleway-Regular.ttf');
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
 @font-face
 {
     font-family: 'Raleway';
-    src: url('./assets/fonts/raleway-variablefont_wght-webfont.woff');
-    src: url('./assets/fonts/raleway-variablefont_wght-webfont.woff2'); 
-    font-weight: normal;
+    src: url('./assets/fonts/Raleway-Medium.ttf');
+    font-weight: 500;
     font-style: normal;
 }
+
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('./assets/fonts/Raleway-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
 
 /* Eléments principaux de la page */
 
 body
 {
-
+    font-size: 0.5em;
     font-family: 'Raleway', sans-serif;
+    font-weight: normal;
     color: #181818;
+}
+body h1
+{
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 #bloc_page
 {
-    width: 100%;
+    width: 80%;
     margin: auto;
 }
 
-section h1
-{
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: 1.1em;
-    text-transform: none;
-}
+
 
 /* Header */
 
@@ -47,20 +55,109 @@ header
 {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+}
+
+#logo img
+{
+    font-size: 10p;
+    width: 50%;
+}
+
+.entete2
+{
+    margin: auto;
+    
+    
 }
 
 .entete2 h1
 {
-    font-size: 1em;
+    
+    text-align:justify
 }
 
 .entete2 p
 {
-    font-size: 0.5em;
-    margin: 0%;
-    padding-top: 0px;
+    margin-top: -5px;
+     
 }
+.info p
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+} 
+
+.info i 
+{ 
+    font-size: 0.5em;
+    margin-right: 2px;
+     /*This creates a 1px solid red border around your element(div) */
+     border:1px solid #F2F2F2;
+     background-color: #FFFFFF;
+     height: 8px;
+     /* border-radius 50% will make it fully rounded. */
+     border-radius: 50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius: 50%;
+     width: 8px;
+     text-align: center;
+}
+
+
+.filtres 
+{
+    display: inline-flex;
+}
+
+.filtres .btn span 
+{
+    /* display: block;
+    height: 36px;
+    */
+    position: relative;
+    top: 0;
+    margin: 0;
+
+}
+.filtres .btn {
+    position: relative;
+    background-color: #FFFFFF;
+    border: 2px solid #F2F2F2;
+    height: 42px;
+    display: block;
+    color: black;
+    padding-left: 0px;
+    padding-right: 3em;
+    padding-top: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-left: 15px;
+    text-align: left;
+    vertical-align: middle;;
+  }
+
+.filtres .btn i
+{ 
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: #0065FC;
+     /*This creates a 1px solid red border around your element(div) */
+     border:1px solid #F2F2F2;
+     background-color: #DEEBFF;
+     /* border-radius 50% will make it fully rounded. */
+     border-radius: 50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius: 50%;
+     padding: 10px;
+    
+
+}
+
 
 /* Navigation */
 
@@ -69,11 +166,13 @@ nav ul
     list-style-type: none;
     display: flex;
     align-items: baseline;
+    
 }
 
 nav li
 {
     margin-right: 20px;
+    font-size: 0.5em;
 }
 
 nav a
@@ -88,7 +187,7 @@ nav a
 {
     color: #0065FC;
     font-weight: bold;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -104,35 +203,49 @@ nav a:hover
 {
     color: #0065FC;
     border-top: 1px solid #0065FC;
-    padding-top: 15px;
+    padding-top: 10px;
 
 }
+
+/*main*/
+
+.container
+
+
 /* Footer */
 
 footer{
+   
     display: flex;
     background-color: #F2F2F2;  
-    padding-top: 10px;
-    padding-bottom: 10px;
-    justify-content: space-between
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    margin-left: -20px;
+    margin-right: -20px ;
 }
 
+
 footer h1{
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: 0.8em;
+    
+   font-weight: bold;
 }
   
 footer ul{
     list-style-type: none;
     font-size: 0.5em;
+    padding-left: 0;
+   
+}
+footer ul a{
+    text-decoration: none;
+    color: black;
 }
 
-footer .about{
-        display: flex;
-        flex-direction: column;
-        margin-left: 20px;
-}
+
+    
+    
+  
+
 
         
 
