@@ -1,29 +1,7 @@
 /* Définition des polices personnalisées */
 
 
-@font-face
-{
-    font-family: 'Raleway';
-    src: url('./assets/fonts/Raleway-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
 
-@font-face
-{
-    font-family: 'Raleway';
-    src: url('./assets/fonts/Raleway-Medium.ttf');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face
-{
-    font-family: 'Raleway';
-    src: url('./assets/fonts/Raleway-Bold.ttf');
-    font-weight: bold;
-    font-style: normal;
-}
 
 
 /* Eléments principaux de la page */
@@ -37,9 +15,12 @@ body
 }
 body h1
 {
-    font-size: 1.2em;
+    font-size: 2em;
     font-weight: bold;
 }
+
+body p
+{font-size: 1em;}
 
 #bloc_page
 {
@@ -58,11 +39,9 @@ header
     align-items: center;
 }
 
-#logo img
+/*#logo img
 {
-    font-size: 10p;
-    width: 50%;
-}
+}*/
 
 .entete2
 {
@@ -138,7 +117,7 @@ header
     padding-top: 0px;
     margin-left: 15px;
     text-align: left;
-    vertical-align: middle;;
+
   }
 
 .filtres .btn i
@@ -177,7 +156,7 @@ nav li
 
 nav a
 {
-    font-size: 0.8em;
+    font-size: 2em;
     padding-bottom: 10px;
     color: #181818;
     text-decoration: none ;
