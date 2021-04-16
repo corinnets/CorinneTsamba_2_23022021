@@ -8,25 +8,26 @@
 
 body
 {
-    font-size: 0.5em;
     font-family: 'Raleway', sans-serif;
     font-weight: normal;
     color: #181818;
+    font-size: 1em;
+    width: 80%;
+    margin: auto;
 }
 body h1
 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
+}
+
+body h2
+{font-size: 1em;
+
 }
 
 body p
 {font-size: 1em;}
-
-#bloc_page
-{
-    width: 80%;
-    margin: auto;
-}
 
 
 
@@ -39,27 +40,20 @@ header
     align-items: center;
 }
 
-/*#logo img
-{
-}*/
 
 .entete2
 {
     margin: auto;
-    
-    
-}
+ }
 
 .entete2 h1
 {
-    
-    text-align:justify
+   text-align:justify
 }
 
 .entete2 p
 {
     margin-top: -5px;
-     
 }
 .info p
 {
@@ -186,25 +180,147 @@ nav a:hover
 
 }
 
-/*main*/
+/*Le bloc contenant les section "Hébergements à Marseille" et "les plus populaires"*/
 
+.container1
+{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between ;
+    /*gap: 0px;*/
+   
+}
+
+/* section "Hébergement à Marseille*/
+
+.container1 .container1_left
+{
+    background-color: #F2F2F2;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+}
+
+
+.container1_left .cards_left
+{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 205px);
+    padding-bottom:0px;
+    background-color: #f2f2f2;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    justify-content: space-evenly;   
+   
+
+}
+
+.container1_left .cards_left .card_item
+{   width: 200px;
+    background-color: #FFFFFF;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    border-radius: 10px;
+
+}
+
+.cards_left .card_img > picture > img
+{
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.container1_left .card_info
+{
+    font-size: 10px;
+}
+
+
+/* section "Les plus populaires*/
+
+.container1 .container1_right
+{
+    background-color: #F2F2F2;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+}
+
+.container1 .container1_right .cards_right
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #F2F2F2;
+    padding-left: 0px ;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    
+}
+
+.container1_right .container1_right_header
+{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between ;
+}
+
+
+
+.container1_right .cards_right .card_item
+{   width: 200px;
+    height: 100px;
+    background-color: #FFFFFF;
+    display: flex;
+    gap: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    border-radius: 10px;
+
+}
+
+.container1_right .cards_right .card_img > picture > img
+{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.container1_right .card_info
+{
+    font-size: 10px;
+}
 
 
 /* Footer */
 
 footer{
    
+    font-size: 1.5em;
     display: flex;
     background-color: #F2F2F2;  
     justify-content: space-between;
     padding: 10px 20px 10px 20px;
     margin-left: -20px;
     margin-right: -20px ;
+    
 }
 
 
 footer h1{
     
+   font-size: 1em;
    font-weight: bold;
 }
   
