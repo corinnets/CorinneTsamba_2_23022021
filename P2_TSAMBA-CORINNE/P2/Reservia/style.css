@@ -302,6 +302,61 @@ nav a:hover
     font-size: 10px;
 }
 
+/* Section "Activités à Marseille"*/
+
+
+
+.bloc_img1
+{
+    display: grid;
+    grid-template-columns: 100px ;
+    background-color: chartreuse;
+    
+}
+.bloc_img2
+{
+    display: grid;
+    grid-template-columns: 100px ;
+    background-color: cadetblue;
+    
+}
+
+
+.bloc_img1 .attraction .img_big
+{
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.bloc_img1 .attraction .img_small
+{
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.bloc_img2 .attraction .img_big
+{
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.bloc_img2 .attraction .img_small
+{
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
 
 /* Footer */
 
