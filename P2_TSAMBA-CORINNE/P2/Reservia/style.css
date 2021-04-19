@@ -1,4 +1,9 @@
-/* Définition des polices personnalisées */
+
+
+*
+{
+    box-sizing: border-box;
+}
 
 
 
@@ -179,6 +184,62 @@ nav a:hover
     padding-top: 10px;
 
 }
+
+.search-input
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/*Champ de recherche*/
+
+.search-wrapper
+{
+    display: flex;
+    max-width: 420px;
+    height: 50px;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    
+}
+
+.search-input
+{
+    background-color: #FFFFFF;
+    border: 1px solid #f2f2f2;
+    padding-left: 18px;
+    font-size: 15px;
+    font-weight: 700;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.location-btn
+{
+    border: none;
+    background-color: #F2F2F2;
+    width: 52px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+
+.search-btn
+{
+    border: none;
+    background-color: #0065FC;
+    color: #FFFFFF;
+    font-weight: 700;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+
+
+
 
 /*Le bloc contenant les section "Hébergements à Marseille" et "les plus populaires"*/
 
