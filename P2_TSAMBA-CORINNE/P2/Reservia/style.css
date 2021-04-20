@@ -378,59 +378,70 @@ nav a:hover{
 
 /* Section "Activités à Marseille"*/
 
-
-
-.bloc_img1
-{
+.container2 {
+    box-sizing: border-box;
     display: grid;
-    grid-template-columns: 100px ;
-    background-color: chartreuse;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,200px);
+    row-gap: 45px;
+    column-gap: 40px;
+    grid-auto-flow: column;
+    margin-bottom: 60px;
+    height: 446px;
+  
+}
+
+.fig{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px 5px #F2F2F2 ;
+    border-radius: 30px;
+            
+}
+
+.fig:nth-child(1),
+.fig:nth-child(4)
+{
+    grid-row: 1 / span 2;
+
+}
+
+
+.fig .image
+{   width: 100%;
+    height: 70%;
+    flex: 1 ;
+    background-color: yellow;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     
 }
-.bloc_img2
-{
-    display: grid;
-    grid-template-columns: 100px ;
-    background-color: cadetblue;
+
+
+
+.fig img{
     
-}
-
-
-.bloc_img1 .attraction .img_big
-{
-    width: 100px;
-    height: 120px;
+    
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+   
+       
 }
 
-.bloc_img1 .attraction .img_small
-{
-    width: 100px;
-    height: 60px;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.fig .legend{
+    font-size: 0.8em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #FFFFFF;
+    padding-left: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #FFFFFF;
 }
 
-.bloc_img2 .attraction .img_big
-{
-    width: 100px;
-    height: 120px;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.bloc_img2 .attraction .img_small
-{
-    width: 100px;
-    height: 60px;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
 
 /* Footer */
 
