@@ -170,7 +170,7 @@ nav a:hover{
 .filter_btn{
     
     background-color: #FFFFFF;
-    border: 2px solid #f2f2f2;
+    border: 2px solid #0000001a;
     display: flex;
     height: 50px;
     align-items: center;
@@ -196,7 +196,7 @@ nav a:hover{
      text-align: center;
      position: absolute;
      top: -2px;
-     left: -1px;
+     left: -2px;
    
 }
 
