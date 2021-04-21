@@ -279,47 +279,90 @@ nav a:hover{
     flex: 1;
 }
 
+.container1_left h1
+{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 
-.container1_left .cards_left
+}
+
+.cards_left
 {
     display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(3, 205px);
-    padding-bottom:0px;
+    row-gap: 30px;
+    column-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
     background-color: #f2f2f2;
-    padding-left: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 0px;
-    padding-right: 0px;
-    justify-content: space-evenly;   
+    justify-content: space-evenly;
+
+
+   
    
 
 }
 
 .cards_left .card_item
-{   width: 200px;
+{   width: 246px;
+    height: 100%;
     background-color: #FFFFFF;
     padding-left: 3px;
     padding-right: 3px;
     padding-bottom: 3px;
     padding-top: 3px;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px 0px #0000008e ;
+
 
 }
 
 .cards_left .card_img > picture > img
 {
-    width: 200px;
-    height: 100px;
+    width: 100%;
+    height: 114px;
     object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 1px;
+
 }
 
 .container1_left .card_info
 {
-    font-size: 10px;
+    padding-left: 15px;
+    padding-top: 0px;
+    
 }
 
+.container1_left .card_info h2
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 5px;
+    
+    
+}
+
+
+.container1_left .price{
+    font-size: 0.8em;
+    margin-top: 0;
+    padding-top: 5px;
+
+}
+.container1_left .star{
+    font-size: 0.7em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.container1_left h3{
+    margin-top: 50px;
+}
 
 /* section "Les plus populaires*/
 
@@ -342,6 +385,7 @@ nav a:hover{
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 20px;
 }
 
 .chart_ico
@@ -368,7 +412,9 @@ nav a:hover{
     background-color: #FFFFFF;
     display: flex;
     gap: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px 0px #0000008e ;
+
     
     
 
@@ -379,9 +425,9 @@ nav a:hover{
     width: 132px;
     height: 100%;
     object-fit: cover;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding: 3px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 5px;
     
 }
 .container1_right .card_info
@@ -395,14 +441,13 @@ nav a:hover{
 {
     
     padding-top: 3px;
-    
 }
 
-.price{
-    font-size: 0.9em;
+.container1_right .price{
+    font-size: 0.8em;
     margin-top: -3px;
 }
-.star{
+.container1_right .star{
     font-size: 0.7em;
     position: absolute;
     bottom: 0;
@@ -411,6 +456,10 @@ nav a:hover{
 
 /* Section "Activités à Marseille"*/
 
+.title_container2
+{
+    padding-bottom: 10px;
+}
 .container2 {
     box-sizing: border-box;
     display: grid;
@@ -427,7 +476,7 @@ nav a:hover{
 .fig{
     display: flex;
     flex-direction: column;
-    box-shadow: 5px 5px 5px 5px #F2F2F2 ;
+    box-shadow: 2px 2px 2px 3px #f2f2f2 ;
     border-radius: 30px;
             
 }
@@ -465,9 +514,10 @@ nav a:hover{
 }
 
 .fig .legend{
-    font-size: 0.8em;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-size: 1em;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border: 1px solid #FFFFFF;
     padding-left: 20px;
     border-bottom-left-radius: 20px;
