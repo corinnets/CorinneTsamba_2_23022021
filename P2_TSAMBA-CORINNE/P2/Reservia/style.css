@@ -262,17 +262,21 @@ nav a:hover{
     display: flex;
     align-items: baseline;
     justify-content: space-between ;
-    /*gap: 0px;*/
+    gap: 40px;
 }
 
 /* section "Hébergement à Marseille*/
 
-.container1 .container1_left
+.container1_left
 {
+    width: 882px;
+    height: 622px;
     background-color: #F2F2F2;
+    border-radius: 20px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 0px;
+    flex: 1;
 }
 
 
@@ -291,7 +295,7 @@ nav a:hover{
 
 }
 
-.container1_left .cards_left .card_item
+.cards_left .card_item
 {   width: 200px;
     background-color: #FFFFFF;
     padding-left: 3px;
@@ -319,61 +323,88 @@ nav a:hover{
 
 /* section "Les plus populaires*/
 
-.container1 .container1_right
+.container1_right
 {
+    width: 418px;
+    height: 622px;
     background-color: #F2F2F2;
+    border-radius: 20px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 0px;
-}
-
-.container1 .container1_right .cards_right
-{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background-color: #F2F2F2;
-    padding-left: 0px ;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding-bottom: 20px;
     
 }
 
-.container1_right .container1_right_header
+.container1_right_header
 {
     display: flex;
     align-items: baseline;
     justify-content: space-between ;
 }
 
+.chart_ico
+{
+    font-size: 1.5em;
+}
 
 
-.container1_right .cards_right .card_item
-{   width: 200px;
-    height: 100px;
+.cards_right
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-left: 20px ;
+    padding-right: 20px;
+    padding-top: 10px;
+    
+}
+
+.cards_right .card_item
+{   width: 100%;
+    height: 145px;
     background-color: #FFFFFF;
     display: flex;
     gap: 10px;
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-bottom: 3px;
-    padding-top: 3px;
     border-radius: 10px;
+    
+    
 
 }
 
-.container1_right .cards_right .card_img > picture > img
+.cards_right .card_img > picture > img
 {
-    width: 100px;
-    height: 100px;
+    width: 132px;
+    height: 100%;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    padding: 3px;
+    
 }
 .container1_right .card_info
 {
-    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.container1_right .card_info h2
+{
+    
+    padding-top: 3px;
+    
+}
+
+.price{
+    font-size: 0.9em;
+    margin-top: -3px;
+}
+.star{
+    font-size: 0.7em;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 15px;
 }
 
 /* Section "Activités à Marseille"*/
@@ -447,7 +478,7 @@ nav a:hover{
 
 footer{
    
-    font-size: 1.5em;
+    
     display: flex;
     background-color: #F2F2F2;  
     justify-content: space-between;
@@ -457,15 +488,9 @@ footer{
     
 }
 
-
-footer h3{
-    
-   font-weight: bold;
-}
   
 footer ul{
     list-style-type: none;
-    font-size: 0.5em;
     padding-left: 0;
    
 }
