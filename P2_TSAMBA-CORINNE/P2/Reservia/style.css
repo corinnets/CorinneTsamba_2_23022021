@@ -39,56 +39,79 @@ body p
 
 /* Header */
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.topbar{
+    
+    display: grid;
+    grid-template-columns: 6fr 2fr 1fr;
+    align-items: end;
     padding-bottom: 30px;
-    padding-top: 30px;
-   
+    margin-top: 40px;
 }
-#logo{
+  
+.topbar_logo{
     
     padding: 0;
-}
-
-/* Navigation */
-
-nav ul{
-    display: flex;
-    list-style-type: none;
-    align-items: baseline;
-    margin-top: 0;
-    margin-bottom: 0;
+    background-color: salmon;
     
 }
-.logo_ul
-{
-    display: hidden;
+
+.stay{
+    border: 2px solid yellow;
+}
+.act{
+    border: 2px solid rgb(202, 206, 209);
 }
 
-nav li{
-    margin-right: 20px;
-    font-size: 1em;
+.topbar_nav{
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: rgb(253, 241, 241);
+    border: 2px solid green;
+
 }
 
-nav a{
+.topbar a{
     
     color: #181818;
     text-decoration: none ;
     padding-bottom: 10px;
-
+    font-size: 1em;   
 
 }
-.enroll #enroll{
+
+
+.topbar_nav a.active,
+.topbar_nav a:hover    /*indique que la page Hébergements du menu de navigation est active*/
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    padding-top: 60px;
+}
+    
+.topbar_enroll{
+    
+
+    background-color: rgb(235, 135, 197);
+    border: 1px solid violet;
+    margin-right: 30px;
+    justify-self: end;
+    
+}
+
+#enroll{
     color: #0065FC;
     font-weight: bold;
     font-size: 1em;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     padding-left: 5px;
     padding-right: 5px;
     
 }
+
+
 
 /*#enroll:hover{
     background-color: #0065FC ;
@@ -97,12 +120,6 @@ nav a{
 }*/
 
 
-nav a.active    /*indique que la page Hébergements du menu de navigation est active*/
-{
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
-    padding-top: 50px;
-}
 
 .entete2{
     margin: auto;
@@ -228,7 +245,7 @@ nav a.active    /*indique que la page Hébergements du menu de navigation est ac
     font-weight: 700;
     padding-left: 60px;
     padding-right: 10px;
-    border: 1px solid red;
+    border: 1px solid rgb(221, 155, 155);
     margin: auto;
 }
 
@@ -656,30 +673,71 @@ footer ul a{
   
 @media only screen and (max-width: 1149px){
 
-    .navbar{
-        display: block;
+
+
+    .container_page{
+        
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    
-   
-    nav a.active{   /*indique que la page Hébergements du menu de navigation est active*/
+
+    .topbar_nav a.active,
+    .topbar_nav a:hover
+    {   /*indique que la page Hébergements du menu de navigation est active*/
 
         color: #0065FC;
         border-bottom: 2px solid #0065FC;
         border-top: 0;
-        padding-top: 10px;
+        padding-top: 20px;
+        
     }
 
+#stay,
+#act
+{
     
+    padding-bottom: 20px;
+}
     
-    /*.ul_grid{
+    /*.topbar{
+    
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 6fr 2fr 1fr;
+        align-items: end;
+        padding-bottom: 30px;
+        margin-top: 40px;
+    }    */
+    
+    .topbar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: 
                             "A B"
-                            "C D";
-    }*/
+                            "C C";
+                            
+        align-items: center;
+        padding-bottom: 30px;
+
+
+    }
+
+
+    .topbar_enroll
+    {
+        grid-area: B;
+        margin-right: 0px;
+    }
+
+    .topbar_nav{
+        grid-area: C;
+        padding-top: 30px;
+    }
     
+    
+
+
+
        
 }
 
