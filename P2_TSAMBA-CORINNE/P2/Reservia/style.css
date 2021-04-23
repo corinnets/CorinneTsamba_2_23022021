@@ -39,7 +39,7 @@ body p
 
 /* Header */
 
-.header_body{
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,30 +55,35 @@ body p
 /* Navigation */
 
 nav ul{
-    list-style-type: none;
     display: flex;
+    list-style-type: none;
     align-items: baseline;
     margin-top: 0;
     margin-bottom: 0;
     
 }
+.logo_ul
+{
+    display: hidden;
+}
 
 nav li{
     margin-right: 20px;
-    font-size: 0.5em;
+    font-size: 1em;
 }
 
 nav a{
-    font-size: 2em;
+    
     color: #181818;
     text-decoration: none ;
     padding-bottom: 10px;
 
 
 }
-#enroll{
+.enroll #enroll{
     color: #0065FC;
     font-weight: bold;
+    font-size: 1em;
     padding-bottom: 10px;
     padding-left: 5px;
     padding-right: 5px;
@@ -91,7 +96,7 @@ nav a{
     border-radius: 5% ;
 }*/
 
-nav a:hover,
+
 nav a.active    /*indique que la page Hébergements du menu de navigation est active*/
 {
     color: #0065FC;
@@ -162,6 +167,11 @@ nav a.active    /*indique que la page Hébergements du menu de navigation est ac
 
 /* La zone des filtres*/
 
+.bloc_filters {
+    display: flex;
+    flex-direction: column;
+}
+
 .filter_area{
     max-width: 928px;
     display: flex;
@@ -170,8 +180,6 @@ nav a.active    /*indique que la page Hébergements du menu de navigation est ac
     padding-bottom: 0;
     justify-content: space-between;
 }
-
-
 
 
 .filter_btn{
@@ -272,7 +280,7 @@ nav a.active    /*indique que la page Hébergements du menu de navigation est ac
 .container1_left
 {
     width: 882px;
-    height: 622px;
+    height: 628px;
     background-color: #F2F2F2;
     border-radius: 20px;
     padding-left: 20px;
@@ -364,7 +372,7 @@ nav a.active    /*indique que la page Hébergements du menu de navigation est ac
 .container1_right
 {
     width: 418px;
-    height: 622px;
+    height: 628px;
     background-color: #F2F2F2;
     border-radius: 20px;
     padding-left: 20px;
@@ -558,10 +566,124 @@ footer ul a{
     color: black;
 }
 
+/* Responsive*/
+
+@media only screen and (max-width: 1402px) {
+    
+    .container1 {
+        flex-direction: column-reverse;
+    }
+
+    .container1_right {
+        width: 100%;
+        height: 260px;
+    }
+    
+    .cards_right {
+        
+        flex-direction: row;
+        padding-top: 0px;
+   }
+    
+   .container1_right_header {
+    padding-top: 0px;
+   }
+   
+
+    .container1_left {
+        width: 100%;
+        background-color: #F2F2F2;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 0px;
+    }
+
+    .cards_left {
+       
+        justify-items: center;
+    
+    }
+
+    .cards_left .card_item {   
+        width: 100%;
+        height: 100%;
+    }  
+
+    .container1_left > h3 {
+        
+        margin-bottom: 40px;
+        margin-top: 40px;
+       }
+       
+       .title_container2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 0px;
+       }
+}
+
+@media only screen and (max-width: 1150px) {
+    
+    .container2 {
+        
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas:
+                "a b c"
+                "d e f";
+    }
+
+    .fig:nth-child(1) {
+        grid-area: a;
+    }
+    .fig:nth-child(2) {
+        grid-area: d;
+    }
+    .fig:nth-child(3) {
+        grid-area: b;
+    }
+    .fig:nth-child(4) {
+        grid-area: e;
+    }
+    .fig:nth-child(5) {
+        grid-area: c;
+    }
+    .fig:nth-child(6) {
+        grid-area: f;
+    }
+}
+
+  
+@media only screen and (max-width: 1149px){
+
+    .navbar{
+        display: block;
+    }
+
+    
+   
+    nav a.active{   /*indique que la page Hébergements du menu de navigation est active*/
+
+        color: #0065FC;
+        border-bottom: 2px solid #0065FC;
+        border-top: 0;
+        padding-top: 10px;
+    }
 
     
     
-  
+    /*.ul_grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+                            "A B"
+                            "C D";
+    }*/
+    
+       
+}
+
+
 
 
         

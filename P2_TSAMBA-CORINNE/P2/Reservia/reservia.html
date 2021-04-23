@@ -12,15 +12,22 @@
     <body class="container_page">
     
         <header class="header_body">
-            <div id="logo">
-                <img src="./assets/logo/Reservia.svg" alt="logo_reservia"/>
-            </div>
-            <nav >
-                <ul>
-                    <li><a href="#" id="stay" class="active">Hébergements</a></li>
-                    <li><a href="#" id="act">Activités</a></li>
-                    <li><a href="#" id="enroll" >S'inscrire</a></li>
-                </ul>
+            <nav  class="navbar">
+                <div id="logo">
+                    <img src="./assets/logo/Reservia.svg" alt="logo_reservia"/>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li class="list_menu"><a href="#" id="stay" class="active">Hébergements</a></li>
+                        <li class="list_menu"><a href="#" id="act">Activités</a></li>
+                    </ul> 
+                </div>
+                <div class="enroll"> 
+                    <a href="#" id="enroll" >S'inscrire</a>
+                </div>
+                    
+                
+              
             </nav>
         
         </header>
@@ -40,24 +47,26 @@
 
         <!-- Les filtres-->
 
-        <div class="filter_area" >
+        <div class="bloc_filters">
             <h2>Filtres</h2>
-            <button class="filter_btn">
-                <div class="filter_ico"><i class="fas fa-money-bill-wave"></i></div>
-                <span class="filter_text">Economique</span>
-            </button>
-            <button class="filter_btn">
-                <div class="filter_ico"><i class="fas fa-child"></i></div>
-                <span class="filter_text">Familial</span>
-            </button>
-            <button class="filter_btn">
-                <div class="filter_ico"><i class="fas fa-heart"></i></div>
-                <span class="filter_text">Romantique</span>
-            </button>
-            <button class="filter_btn">
-                <div class="filter_ico"><i class="fas fa-dog"></i></div>
-                <span class="filter_text">Animaux autorisés</span>
-            </button>
+            <div class="filter_area" >
+                <button class="filter_btn">
+                    <div class="filter_ico"><i class="fas fa-money-bill-wave"></i></div>
+                    <span class="filter_text">Economique</span>
+                </button>
+                <button class="filter_btn">
+                    <div class="filter_ico"><i class="fas fa-child"></i></div>
+                    <span class="filter_text">Familial</span>
+                </button>
+                <button class="filter_btn">
+                    <div class="filter_ico"><i class="fas fa-heart"></i></div>
+                    <span class="filter_text">Romantique</span>
+                </button>
+                <button class="filter_btn">
+                    <div class="filter_ico"><i class="fas fa-dog"></i></div>
+                    <span class="filter_text">Animaux autorisés</span>
+                </button>
+            </div>
         </div>
 <!-- Espace information-->
 
@@ -263,7 +272,7 @@
                     </div>
                 </div>
             </div>
-        </section><br/><br/>
+        </section>
 
 <!--fin des sections "Hébergement à Marseille" et "Les plus populaires"-->
 
