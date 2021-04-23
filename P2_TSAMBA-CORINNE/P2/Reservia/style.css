@@ -42,10 +42,10 @@ body p
 .topbar{
     
     display: grid;
-    grid-template-columns: 6fr 2fr 1fr;
+    grid-template-columns: 6fr 1fr 1fr 1fr;
     align-items: end;
     padding-bottom: 30px;
-    margin-top: 40px;
+    
 }
   
 .topbar_logo{
@@ -57,12 +57,23 @@ body p
 
 .stay{
     border: 2px solid yellow;
-}
-.act{
-    border: 2px solid rgb(202, 206, 209);
+    flex-basis: 150px;
+    width: 100%;
+    text-align: center;
+
 }
 
-.topbar_nav{
+
+.act{
+    border: 2px solid rgb(202, 206, 209);
+    align-self: flex-end;
+    flex-basis: 100px;
+    text-align: center;
+
+
+}
+
+/*.topbar_nav{
 
     display: flex;
     justify-content: space-around;
@@ -71,34 +82,41 @@ body p
     background-color: rgb(253, 241, 241);
     border: 2px solid green;
 
-}
+}*/
 
 .topbar a{
     
-    color: #181818;
+    color: black;
     text-decoration: none ;
     padding-bottom: 10px;
     font-size: 1em;   
 
 }
 
-
-.topbar_nav a.active,
-.topbar_nav a:hover    /*indique que la page Hébergements du menu de navigation est active*/
+.stay,
+#stay
 {
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
-    padding-top: 60px;
+    color: blue;
+    border-top: 2px solid blue;
+    padding-top: 55px;
 }
-    
+
+
+.box:hover,
+div a:hover {
+    color: blue;
+    border-top: 2px solid blue;
+    padding-top: 55px;
+}
+
+
 .topbar_enroll{
     
-
-    background-color: rgb(235, 135, 197);
-    border: 1px solid violet;
-    margin-right: 30px;
-    justify-self: end;
     
+    background-color: rgb(235, 135, 197);
+    border: 1px solid rgb(159, 238, 113);
+    text-align: center;
+
 }
 
 #enroll{
@@ -110,16 +128,6 @@ body p
     padding-right: 5px;
     
 }
-
-
-
-/*#enroll:hover{
-    background-color: #0065FC ;
-    color: #ffffff;
-    border-radius: 5% ;
-}*/
-
-
 
 .entete2{
     margin: auto;
@@ -681,24 +689,30 @@ footer ul a{
         margin-right: auto;
     }
 
-
-    .topbar_nav a.active,
-    .topbar_nav a:hover
+    .stay.active,
+    .stay #stay:hover
     {   /*indique que la page Hébergements du menu de navigation est active*/
 
         color: #0065FC;
-        border-bottom: 2px solid #0065FC;
+        border-bottom: 2px solid #a000fc;
+        padding-bottom: 30px;
         border-top: 0;
-        padding-top: 20px;
+        padding-top: 0;
         
     }
 
-#stay,
-#act
-{
+    .act.active2,
+    .act #act:hover
+    {   /*indique que la page Hébergements du menu de navigation est active*/
+
+        color: #0065FC;
+        border-bottom: 2px solid #690c0c;
+        padding-bottom: 30px;
+        border-top: 0;
+        padding-top: 0;
+        
+    }
     
-    padding-bottom: 20px;
-}
     
     /*.topbar{
     
@@ -732,7 +746,12 @@ footer ul a{
     .topbar_nav{
         grid-area: C;
         padding-top: 30px;
+        justify-content: center;
+
     }
+    
+    
+    
     
     
 
