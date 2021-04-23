@@ -43,9 +43,9 @@ body p
     
     display: grid;
     grid-template-columns: 6fr 1fr 1fr 1fr;
-    align-items: end;
     padding-bottom: 30px;
-    
+    align-items: end;
+
 }
   
 .topbar_logo{
@@ -57,8 +57,6 @@ body p
 
 .stay{
     border: 2px solid yellow;
-    flex-basis: 150px;
-    width: 100%;
     text-align: center;
 
 }
@@ -67,22 +65,11 @@ body p
 .act{
     border: 2px solid rgb(202, 206, 209);
     align-self: flex-end;
-    flex-basis: 100px;
     text-align: center;
 
 
 }
 
-/*.topbar_nav{
-
-    display: flex;
-    justify-content: space-around;
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: rgb(253, 241, 241);
-    border: 2px solid green;
-
-}*/
 
 .topbar a{
     
@@ -101,7 +88,6 @@ body p
     padding-top: 55px;
 }
 
-
 .box:hover,
 div a:hover {
     color: blue;
@@ -110,7 +96,7 @@ div a:hover {
 }
 
 
-.topbar_enroll{
+.topbar_enroll {
     
     
     background-color: rgb(235, 135, 197);
@@ -122,11 +108,7 @@ div a:hover {
 #enroll{
     color: #0065FC;
     font-weight: bold;
-    font-size: 1em;
-    padding-bottom: 0px;
-    padding-left: 5px;
-    padding-right: 5px;
-    
+      
 }
 
 .entete2{
@@ -687,30 +669,42 @@ footer ul a{
         
         margin-left: auto;
         margin-right: auto;
+        margin-top: 20px;
     }
 
-    .stay.active,
-    .stay #stay:hover
+    .stay
     {   /*indique que la page Hébergements du menu de navigation est active*/
 
         color: #0065FC;
-        border-bottom: 2px solid #a000fc;
-        padding-bottom: 30px;
-        border-top: 0;
-        padding-top: 0;
-        
+        border-bottom: 2px solid #00fca8;
+        padding-bottom: 10px;
+        padding-top: 0px;
+        border-top-style: none;
+       
+    }
+    #stay {
+        color: #0065FC;
+        padding-bottom: 10px;
+        padding-top: 0px;
+        border-top: hidden;
     }
 
-    .act.active2,
-    .act #act:hover
-    {   /*indique que la page Hébergements du menu de navigation est active*/
+    .act{   /*indique que la page Activité du menu de navigation*/
 
         color: #0065FC;
         border-bottom: 2px solid #690c0c;
-        padding-bottom: 30px;
-        border-top: 0;
-        padding-top: 0;
-        
+        padding-bottom: 10px;
+        padding-top: 0px;
+        border-top: hidden;
+
+    }
+
+
+    
+    .box:hover,
+    div a:hover {
+        padding-top: 0px;
+        border-top: hidden;
     }
     
     
@@ -730,25 +724,24 @@ footer ul a{
                             "A B"
                             "C C";
                             
-        align-items: center;
         padding-bottom: 30px;
+        align-items:center
 
 
     }
 
+    
 
     .topbar_enroll
     {
         grid-area: B;
         margin-right: 0px;
-    }
-
-    .topbar_nav{
-        grid-area: C;
-        padding-top: 30px;
-        justify-content: center;
+        text-align: end;
+        border-top: hidden;
 
     }
+
+    
     
     
     
