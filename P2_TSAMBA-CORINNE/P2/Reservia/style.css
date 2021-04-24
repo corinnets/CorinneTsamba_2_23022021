@@ -143,7 +143,7 @@ div a:hover {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     font-size: 1.1em;
-    max-width: 52px;
+    max-width: 53px;
     width: 100%;
 
 }
@@ -154,7 +154,6 @@ div a:hover {
     padding-left: 18px;
     font-size: 15px;
     white-space: nowrap;
-    max-width: 234px;
     width: 100%;
     font-size: 1em;
     font-weight: 700;
@@ -170,6 +169,11 @@ div a:hover {
     font-size: 1.1em;
     max-width: 134px;
     width: 100%;
+}
+
+.search_icon
+{
+    display: none;
 }
 
 /* La zone des filtres*/
@@ -642,7 +646,7 @@ footer ul a{
     .filter_btn:nth-child(4)
        
     {
-        margin-right:  10px;
+        margin-right:  5px;
         margin-left: 0px;
     }
     
@@ -725,16 +729,6 @@ footer ul a{
         border-top: hidden;
     }
     
-    
-    /*.topbar{
-    
-        display: grid;
-        grid-template-columns: 6fr 2fr 1fr;
-        align-items: end;
-        padding-bottom: 30px;
-        margin-top: 40px;
-    }    */
-    
     .topbar{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -748,8 +742,6 @@ footer ul a{
 
     }
 
-    
-
     .topbar_enroll
     {
         grid-area: B;
@@ -759,7 +751,20 @@ footer ul a{
 
     }
 
+    /*search bar containing search_icon*/
+    .search_label{
+        display: none;
+    }  
     
+    .search_icon {
+    display: inline-block;
+
+    }
+    
+    .search-btn {
+        max-width: 51px;
+    }
+
     
     
     
