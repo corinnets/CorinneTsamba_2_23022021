@@ -154,6 +154,12 @@ body p
 
 }
 
+.location_ico{
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+}
+
 .search-input{
     background-color: #FFFFFF;
     border: 1px solid #f2f2f2;
@@ -177,9 +183,20 @@ body p
     width: 100%;
 }
 
-.search_icon
-{
+.search_label{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.search-btn .search_icon{
     display: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
 }
 
 /* La zone des filtres*/
@@ -405,8 +422,9 @@ body p
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 20px;
+    padding-top: 0px;
 }
+
 
 .chart_ico
 {
@@ -585,7 +603,11 @@ footer ul a{
     color: black;
 }
 
-/* Responsive tablette et mobile avec 2 breakpoint à 1402px et 1144 px*/
+.footer_list{
+    padding-bottom: 20px;
+}
+
+/* Responsive tablette et mobile avec 13 breakpoint à 1404px, 1360px, 1292px, 1224px, 1012px, 1002px, 920px, 883px, 768px, 655px,593px, 498px et 375px */
 
 
 
@@ -985,7 +1007,7 @@ footer ul a{
         display: none;
     }  
     
-    .search_icon {
+    .search-btn .search_icon {
     display: inline-block;
 
     }
