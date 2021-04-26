@@ -233,6 +233,17 @@ body p
     border-radius: 50px;
 }
 
+/*survol boutton filtres*/
+
+.filter_text:hover {
+   color:  rgba(0, 0, 255, 0.376);
+}
+.filter_btn:hover {
+    border: 1px solid rgba(0, 0, 255, 0.137);
+}
+
+
+
 .filter_btn div i{ 
     margin-right: 10px;
     width: 50px;
@@ -253,8 +264,6 @@ body p
      left: -2px;
    
 }
-
-
 
 .filter_text{
     display: block;
@@ -358,6 +367,47 @@ body p
 
 }
 
+/* début astuce pour rendre la zone carte cliquable à partir du a situé dans la légende en utilisant le pseudo element before ou after*/
+
+.card_item .card_info h3 a{
+    text-decoration: none;
+    color: black;
+}
+.card_item{
+
+    position: relative; 
+
+}
+
+.card_item a::before{
+    content: '';
+    position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+}
+
+.fig{
+    position: relative;
+}
+
+.fig a::after {
+    content: '';
+    position: absolute;
+    left:0;
+	right:0;
+	top:0;
+	bottom:0;
+}
+
+.fig h3 a{
+    text-decoration: none;
+    color: black;
+}
+
+/*début astuce pour rendre la zone carte cliquable à partir du a situé dans la légende en utilisant le pseudo element before ou after*/
+
 .cards_left .card_img > picture > img
 {
     width: 100%;
@@ -400,6 +450,8 @@ body p
 .container1_left h3{
     margin-top: 50px;
 }
+
+
 
 /* section "Les plus populaires*/
 
