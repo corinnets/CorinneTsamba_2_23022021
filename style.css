@@ -241,7 +241,9 @@ body p
 .filter_btn:hover {
     border: 1px solid rgba(0, 0, 255, 0.137);
 }
-
+.filter_btn div i:hover {
+    color:  rgba(0, 0, 255, 0.376);
+}
 
 
 .filter_btn div i{ 
