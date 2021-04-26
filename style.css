@@ -217,7 +217,7 @@ body p
     flex-direction: row;
     padding-top: 0;
     padding-bottom: 0;
-    justify-content: space-between;
+    
 }
 
 
@@ -239,7 +239,7 @@ body p
    color:  rgba(0, 0, 255, 0.376);
 }
 .filter_btn:hover {
-    border: 1px solid rgba(0, 0, 255, 0.137);
+    border: 2px solid rgba(0, 0, 255, 0.137);
 }
 .filter_btn div i:hover {
     color:  rgba(0, 0, 255, 0.376);
