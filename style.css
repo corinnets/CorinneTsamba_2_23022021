@@ -53,14 +53,23 @@ body p
 .topbar{
     
     display: grid;
-    grid-template-columns: 6fr 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
     padding-bottom: 30px;
     align-items: end;
 
 }
+
+.topbar a{
+    
+    color: black;
+    text-decoration: none ;
+    /*padding-bottom: 10px;*/
+    font-size: 1em;   
+}
+
 .navbar{
     display: flex;
-    justify-content: space-around;
+
 }
   
 .topbar_logo{
@@ -71,25 +80,28 @@ body p
 
 .stay{
     text-align: center;
-
+    flex: 1;
 }
 
 
 .act{
     align-self: flex-end;
     text-align: center;
-
+    flex: 1;
 
 }
 
 
-.topbar a{
-    
-    color: black;
-    text-decoration: none ;
-    padding-bottom: 10px;
-    font-size: 1em;   
+.topbar_enroll {
+        
+    text-align: center;
+    align-self: flex-end;
+    flex: 1;
+}
 
+#enroll{
+    color: #0065FC;
+    font-weight: bold;
 }
 
 .stay,
@@ -105,20 +117,6 @@ body p
     color: blue;
     border-top: 2px solid blue;
     padding-top: 55px;
-}
-
-
-.topbar_enroll {
-    
-    
-    text-align: center;
-
-}
-
-#enroll{
-    color: #0065FC;
-    font-weight: bold;
-      
 }
 
 .entete2{
@@ -720,7 +718,7 @@ footer ul a{
     
     .topbar {
         
-        grid-template-columns: 6fr 3fr 1fr;
+        grid-template-columns: 2fr 1fr;
     }
 
     
@@ -829,7 +827,7 @@ footer ul a{
 
     .topbar {
         
-        grid-template-columns: 6fr 4fr 1fr;
+        grid-template-columns: 2fr 4fr;
         justify-content: space-around;
     }
     
@@ -946,14 +944,17 @@ footer ul a{
         padding-top: 0px;
         border-top-style: none;
         margin-left: -20px;
-        margin-top: 25px;
-       
+        flex-basis: 50%;
+        margin-top: 40px;
+
     }
     #stay {
         color: #0065FC;
         padding-bottom: 10px;
         padding-top: 0px;
         border-top: hidden;
+
+       
     }
 
     .act{   /*indique que la page Activité du menu de navigation*/
@@ -964,48 +965,42 @@ footer ul a{
         padding-top: 0px;
         border-top: hidden;
         margin-right: -20px;
-        
+       align-self: baseline;
+       flex-basis: 50%;
 
     }
 
 
-    
+
+    .topbar_enroll{
+        text-align: end;
+        line-height: 30px;   
+    }
+   
     .box:hover,
     .topbar div a:hover {
         padding-top: 0px;
         border-top: hidden;
     }
-    
+
     .topbar{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-                            "A B"
-                            "C C";
-                            
-        padding-bottom: 30px;
-        align-items:center
-
-
-    }
-    .navbar{
-        grid-area: C;
+        display: block;
     }
 
-    .box{
-        flex: 1;
+    .topbar>img{
+        display: inline-block;
+        margin-bottom: -40px;
     }
-
     
-
-    .topbar_enroll
-    {
-        grid-area: B;
-        margin-right: 0px;
-        text-align: end;
-        border-top: hidden;
-
+    
+    .navbar{
+        flex-wrap: wrap-reverse;
+               
     }
+
+   
+
+   
 
     .container2{
         height: 1400px;
