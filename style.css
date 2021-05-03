@@ -53,10 +53,14 @@ body p
 .topbar{
     
     display: grid;
-    grid-template-columns: 6fr 1fr 1fr 1fr;
+    grid-template-columns: 6fr 2fr 1fr;
     padding-bottom: 30px;
     align-items: end;
 
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
 }
   
 .topbar_logo{
@@ -294,6 +298,7 @@ body p
 }
 .info-ico{
    text-align: center;
+   color: #0065fc;
 }
 
 .info div i { 
@@ -319,8 +324,16 @@ body p
     justify-content: space-between ;
     gap: 40px;
 }
+.star_opac{
+    opacity: 0.2;
+    color: initial;
+}
+div>span{
+    font-weight: bold;
+}
 
 /* section "Hébergement à Marseille*/
+
 
 .container1_left
 {
@@ -365,36 +378,28 @@ body p
     padding-bottom: 3px;
     padding-top: 3px;
     border-radius: 20px;
-    
-
+  
 }
 
 /* début astuce pour rendre la zone carte cliquable à partir du a situé dans la légende en utilisant le pseudo element before ou after*/
 
-.card_item .card_info h3 a{
+.cards_right a{
+    display: block;
     text-decoration: none;
     color: black;
 }
-.card_item{
-
-    position: relative; 
-
+.cards_left a{
+    display: block;
+    text-decoration: none;
+    color: black;
 }
 
-.card_item a::before{
-    content: '';
-    position:absolute;
-	left:0;
-	right:0;
-	top:0;
-	bottom:0;
-}
 
 .fig{
     position: relative;
 }
 
-.fig a::after {
+.fig a::before {
     content: '';
     position: absolute;
     left:0;
@@ -408,7 +413,7 @@ body p
     color: black;
 }
 
-/*début astuce pour rendre la zone carte cliquable à partir du a situé dans la légende en utilisant le pseudo element before ou after*/
+/*fin astuce pour rendre la zone carte cliquable à partir de la balise a située dans la légende en utilisant le pseudo element before ou after*/
 
 .cards_left .card_img > picture > img
 {
@@ -446,7 +451,7 @@ body p
     font-size: 0.7em;
     padding-top: 5px;
     padding-bottom: 5px;
-
+    color: blue;
 }
 
 .container1_left h3{
@@ -543,6 +548,7 @@ body p
     position: absolute;
     bottom: 0;
     padding-bottom: 15px;
+    color: blue;
 }
 
 /* Section "Activités à Marseille"*/
@@ -610,6 +616,7 @@ body p
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: #FFFFFF;
+    margin: 0px;
 }
 
 .shadow1 {
@@ -713,7 +720,7 @@ footer ul a{
     
     .topbar {
         
-        grid-template-columns: 6fr 1fr 1fr 1fr;
+        grid-template-columns: 6fr 3fr 1fr;
     }
 
     
@@ -822,7 +829,8 @@ footer ul a{
 
     .topbar {
         
-        grid-template-columns: 6fr 2fr 1.5fr 1fr;
+        grid-template-columns: 6fr 4fr 1fr;
+        justify-content: space-around;
     }
     
     .container1_right {
@@ -980,6 +988,15 @@ footer ul a{
 
 
     }
+    .navbar{
+        grid-area: C;
+    }
+
+    .box{
+        flex: 1;
+    }
+
+    
 
     .topbar_enroll
     {
